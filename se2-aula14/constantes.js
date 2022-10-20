@@ -25,3 +25,9 @@ const segundoNumero = 10;
 multiplicacao = primeiroNumero * segundoNumero
 console.log(multiplicacao)
 
+console.log('Os números não possuem aspas e as strings estão dentro de aspas. Importante dizer que o JavaScript é uma linguagem de tipagem dinâmica, ou seja, o tipo da variável é definido automaticamente. Mas, para buscar o tipo do arquivo, digite console.log(typeof(variável))')
+
+console.log('A variável' ,multiplicacao,'é do tipo' ,typeof(multiplicacao))
+console.log('É importante colocar os parênteses para dividir as funções de cada argumento')
+console.log(typeof nome + primeiroNumero);
+console.log(typeof(nome + primeiroNumero));
