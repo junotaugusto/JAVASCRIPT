@@ -14,3 +14,14 @@ Algumas regras e orientações sobre variáveis constantes:
 
 7 - Não utilizar VAR, utilizar CONST.
 */
+const meuNome = 'Junot Augusto'; //Não tem como apenas declarar uma constante porque ela não pode ser modificada posteriormente.
+let nome;
+console.log(meuNome);
+nome = 'Junot Cordeiro Neto';
+console.log('Meu nome é',meuNome,'e meu filho se chama',nome);
+console.log('');
+const primeiroNumero = 5;
+const segundoNumero = 10;
+multiplicacao = primeiroNumero * segundoNumero
+console.log(multiplicacao)
+
