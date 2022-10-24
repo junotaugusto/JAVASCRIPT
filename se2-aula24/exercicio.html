@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Aula 24</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            background-color: lightgrey;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nome = prompt('Digite seu nome: ')
+        let nome2;
+        document.body.innerHTML += `O seu nome é ${nome}. <br />`
+        document.body.innerHTML += `O seu primeiro nome é ${nome.split(' ',1)} <br />`
+        nome2 = nome.replace(/ /g, "");
+        document.body.innerHTML += `O seu nome tem ${nome2.length} letras, sem contar os espaços. <br />`
+        document.body.innerHTML += `A segunda letra do seu nome é "${nome[1]}". <br />`
+        document.body.innerHTML += `A letra "A" aparece no seu nome no índice ${nome.indexOf('A')}, contando os espaços. <br />`
+        document.body.innerHTML += `A última vez que aparece a letra "A" no seu nome é no índice ${nome.lastIndexOf('A')}, também contando os espaços. <br />`
+        document.body.innerHTML +=  `As três últimas letras do seu nome são: "${nome.slice(-3)}".<br />`
+        document.body.innerHTML += `As palavras do seu nome são ${nome.split(' ')}. <br />`
+        document.body.innerHTML += `Seu nome com letras maiúsculas é ${nome.toUpperCase()} <br />`
+        document.body.innerHTML += `Seu nome com letras minúsculas é ${nome.toLowerCase()}. <br />`
+
+    </script>
+</body>
+</html>
