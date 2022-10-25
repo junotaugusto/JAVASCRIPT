@@ -12,25 +12,34 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 30px;
         }
+
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        
+        #texto {
+            padding: 15px;
+            padding-bottom: 20px;
+            background-color: lightsalmon;
+            width: 70%;
+            text-align: center;
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            border: 4px solid rgb(0, 85, 91);
+            color: aliceblue;
+
+        }
+
     </style>
 </head>
 <body>
-    <script>
-        let numero = prompt('Digite um número');
-        numero = parseFloat(numero); //Converter para Float para que o número possa aparecer com vírgulas no site.
-        document.body.innerHTML += (`O tipo do número é <strong>${typeof(numero)}</strong> <br/>`)
+    <section>
+        <h1>Você digitou o número <span id="numero-titulo"></span></h1>
+        <div id="texto"></div>
+    </section>
 
-        document.body.innerHTML += (`Seu número é <strong>${numero}</strong> <br/ >`)
-        
-        document.body.innerHTML += (`A raiz quadrada do número escolhido é <strong>${Math.sqrt(numero).toFixed(2)}</strong> <br/ >`)
-        
-        document.body.innerHTML += (`O número <strong>${numero}</strong> é inteiro? <strong>${Number.isInteger(numero)}</strong> <br/ >`);
-
-        document.body.innerHTML += (`O número <strong>${numero}</strong> não é um número (NaN)? <strong>${Number.isNaN(numero)}</strong> <br/ >`);
-
-        document.body.innerHTML += (`O número <strong>${numero}</strong>, arredondado para cima, fica <strong>${Math.ceil(numero)}</strong> <br/ >`);
-
-        document.body.innerHTML += (`O número <strong>${numero}</strong>, arredondado para baixo fica <strong>${Math.floor(numero)}</strong>`);
-    </script>
+    <script src="js/exercicio.js"></script>
 </body>
 </html>
