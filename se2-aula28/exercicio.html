@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 2 - Aula 28 - Exercício com Numbers e Math</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let numero = prompt('Digite um número');
+        numero = parseFloat(numero); //Converter para Float para que o número possa aparecer com vírgulas no site.
+        document.body.innerHTML += (`O tipo do número é <strong>${typeof(numero)}</strong> <br/>`)
+
+        document.body.innerHTML += (`Seu número é <strong>${numero}</strong> <br/ >`)
+        
+        document.body.innerHTML += (`A raiz quadrada do número escolhido é <strong>${Math.sqrt(numero).toFixed(2)}</strong> <br/ >`)
+        
+        document.body.innerHTML += (`O número <strong>${numero}</strong> é inteiro? <strong>${Number.isInteger(numero)}</strong> <br/ >`);
+
+        document.body.innerHTML += (`O número <strong>${numero}</strong> não é um número (NaN)? <strong>${Number.isNaN(numero)}</strong> <br/ >`);
+
+        document.body.innerHTML += (`O número <strong>${numero}</strong>, arredondado para cima, fica <strong>${Math.ceil(numero)}</strong> <br/ >`);
+
+        document.body.innerHTML += (`O número <strong>${numero}</strong>, arredondado para baixo fica <strong>${Math.floor(numero)}</strong>`);
+    </script>
+</body>
+</html>
