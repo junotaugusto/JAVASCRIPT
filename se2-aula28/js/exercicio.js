@@ -17,4 +17,6 @@
 
         texto.innerHTML += (`<p>O número ${numero}, arredondado para baixo fica ${Math.floor(numero)}</p>`);
 
+        texto.innerHTML += (`O número arredondado com duas casas decimais é ${numero.toFixed(2)}`);
+
         
