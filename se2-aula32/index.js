@@ -23,3 +23,15 @@ function criarPessoa (nome, sobrenome, idade) {
 }
 const pessoa = criarPessoa('Junot', 'Cordeiro Neto', 10);
 console.log(pessoa.nome, pessoa.sobrenome, pessoa.idade);
+
+// CRIANDO MÉTODOS DENTRO DA VARIÁVEL
+
+const cadastro = {
+    nome: 'Junot',
+    sobrenome: 'Augusto',
+    idade: 39,
+    dizer() {  //Isso é um método
+        console.log(`${this.nome} ${this.sobrenome} está dizendo oi...`);
+    }
+}
+cadastro.dizer();
