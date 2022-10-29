@@ -70,10 +70,22 @@ console.log(soma2(5));  //Lembrando que, no caso de apenas um argumento for inse
 
 //CRIANDO UMA FUNÇÃO ANÔNIMA (AQUELAS QUE ESTÃO DENTRO DE VARIÁVEIS)
  
+const raiz = function(n){ 
+    return Math.sqrt(n)  //Pode utilizar também a linha: return n ** 0.5
 
+}; //Sempre que uma variável recebe uma função, é preciso terminar com ponto e vírgula
+console.log(raiz(9));
+console.log(raiz(144));
 
-
-
-
-
+// CRIANDO UMA FUNÇÃO UTILIZANDO O ARROW FUNCTION
+// Ao invés de utilizar a palavra function, utiliza-se => após o argumento.
+const raiz2 = (numero) => {  
+    return Math.sqrt(numero)
+};
+console.log(raiz2(225).toFixed(2));
+console.log(typeof(raiz2))
+// Essa função serve para facilitar e melhorar o código quando existe apenas um argumento. Utilizando esta arrow function, o código pode ser muito simplificado, conforme abaixo:
+const raizquadrada = numeral => Math.sqrt(numeral);
+console.log(raizquadrada(25))
+// Vale lembrar que é melhor que as funções sejam mais simples do que complicadas.
 
