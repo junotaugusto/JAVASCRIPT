@@ -21,7 +21,7 @@ function criarPessoa (nome, sobrenome, idade) {
         idade: idade
     };
 }
-const pessoa = criarPessoa('Junot', 'Cordeiro Neto', 10);
+const pessoa = criarPessoa('Junot', 'Cordeiro Neto', 10);  //Atribuindo a uma variável
 console.log(pessoa.nome, pessoa.sobrenome, pessoa.idade);
 
 // CRIANDO MÉTODOS DENTRO DA VARIÁVEL
