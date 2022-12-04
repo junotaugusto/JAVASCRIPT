@@ -1,3 +1,4 @@
+
 let data = new Date();
 let diaSemana = data.getDay()
 let mes = data.getMonth()
@@ -31,29 +32,29 @@ function getDiaSemanaTexto(diaSemana){
 function getMesDoAno(mes){
     let mesDoAnoTexto;
     switch (mes){
-        case 1: mesDoAnoTexto = 'Janeiro';
+        case 0: mesDoAnoTexto = 'Janeiro';
             return mesDoAnoTexto;
-        case 2: mesDoAnoTexto = 'Fevereiro';
+        case 1: mesDoAnoTexto = 'Fevereiro';
             return mesDoAnoTexto;
-        case 3: mesDoAnoTexto = 'Março';
+        case 2: mesDoAnoTexto = 'Março';
             return mesDoAnoTexto;
-        case 4: mesDoAnoTexto = 'Abril';
+        case 3: mesDoAnoTexto = 'Abril';
             return mesDoAnoTexto;
-        case 5: mesDoAnoTexto = 'Maio';
+        case 4: mesDoAnoTexto = 'Maio';
             return mesDoAnoTexto;
-        case 6: mesDoAnoTexto = 'Junho';
+        case 5: mesDoAnoTexto = 'Junho';
             return mesDoAnoTexto;
-        case 7: mesDoAnoTexto = 'Julho';
+        case 6: mesDoAnoTexto = 'Julho';
             return mesDoAnoTexto;
-        case 8: mesDoAnoTexto = 'Agosto';
+        case 7: mesDoAnoTexto = 'Agosto';
             return mesDoAnoTexto;
-        case 9: mesDoAnoTexto = 'Setembro';
+        case 8: mesDoAnoTexto = 'Setembro';
             return mesDoAnoTexto;
-        case 10: mesDoAnoTexto = 'Outubro';
+        case 9: mesDoAnoTexto = 'Outubro';
             return mesDoAnoTexto;
-        case 11: mesDoAnoTexto = 'Novembro';
+        case 10: mesDoAnoTexto = 'Novembro';
             return mesDoAnoTexto;
-        case 12: mesDoAnoTexto = 'Dezembro';
+        case 11: mesDoAnoTexto = 'Dezembro';
             return mesDoAnoTexto;
         default: mesDoAnoTexto = '';
             return mesDoAnoTexto
@@ -84,4 +85,16 @@ function diaeano(){
 }
 
 console.log(a)
+
+
+/*
+const h1 = document.getElementById('resultado');
+const data = new Date();
+const opcoes = {
+    dateStyle: 'full',
+    timeStyle: 'short'
+};
+
+h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes);
+*/
 
