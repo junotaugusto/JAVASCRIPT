@@ -84,9 +84,6 @@ function diaeano(){
     agora.style.fontStyle = `italic`
 }
 
-console.log(a)
-
-
 /*
 const h1 = document.getElementById('resultado');
 const data = new Date();
@@ -95,6 +92,6 @@ const opcoes = {
     timeStyle: 'short'
 };
 
-h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes);
+h1.innerHTML = data.toLocaleTimeString('pt-BR', opcoes);
 */
 
