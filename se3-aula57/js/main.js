@@ -6,12 +6,27 @@ let p = paragrafos.querySelectorAll('p'); //Selecionou todos os elementos "p" do
 const estilosBody = getComputedStyle(document.body)
 const backgroundColorBody = estilosBody.backgroundColor; //Atribuindo a cor do background do body à variável backgroundColorBody
 console.log(backgroundColorBody)
-for(let i of p){ // iterando dentro do objeto selecionado e mexendo nos estilos abaixo.
-    i.style.backgroundColor=backgroundColorBody;
-    i.style.borderRadius = '5px';
-    i.style.padding = '8px';
-    i.style.textAlign = 'center'
-    i.style.fontStyle = 'italic'
-    i.style.color = 'white'
-}
+//OUTRA SOLUÇÃO QUE FIZ:
+// for(let i = 0; i < p.length ; i++){ 
+//     // iterando dentro do objeto selecionado e mexendo nos estilos abaixo.
+//     if(i === 0){
+//         p[i].style.backgroundColor = backgroundColorBody
 
+//     } else if(i===1){
+//         p[i].style.backgroundColor = 'lightGrey'
+//     } else if(i ===2){
+//         p[i].style.backgroundColor = 'orange'
+//     } else if(i ===3){
+//         p[i].style.backgroundColor = 'darkgreen'
+//         p[i].style.color = 'white'
+//     }
+// }
+
+//SOLUÇÃO ANTERIOR:
+for (i of p){
+    i.style.backgroundColor = backgroundColorBody;
+    i.style.borderRadius = '8px'
+    i.style.padding = '8px';
+    i.style.color = '#FFFFFF'
+    i.style.fontStyle = 'italic';
+}
