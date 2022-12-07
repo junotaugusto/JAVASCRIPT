@@ -6,6 +6,7 @@ let p = paragrafos.querySelectorAll('p'); //Selecionou todos os elementos "p" do
 const estilosBody = getComputedStyle(document.body)
 const backgroundColorBody = estilosBody.backgroundColor; //Atribuindo a cor do background do body à variável backgroundColorBody
 console.log(backgroundColorBody)
+
 //OUTRA SOLUÇÃO QUE FIZ:
 // for(let i = 0; i < p.length ; i++){ 
 //     // iterando dentro do objeto selecionado e mexendo nos estilos abaixo.
