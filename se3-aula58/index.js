@@ -19,7 +19,8 @@ contador = 0
 
 while(rand !== 10){
     rand = random(min, max)
+    console.log(rand)
     contador = contador + 1
 }
 
-console.log(contador)
+console.log(`${contador} vezes`)
