@@ -4,11 +4,11 @@ const fizzBuzz = (n) => {
     } else {
         if (n <= 100){
             if(n % 3 === 0 && n % 5 === 0){
-                return 'FizzBuzz' //Tem que vir primeiro por causa de return
+                return `${n} - FizzBuzz` //Tem que vir primeiro por causa de return
             } else if (n % 3 === 0){
-                return 'Fizz'
+                return `${n} - Fizz`
             } else if (n % 5 === 0){
-                return 'Buzz'
+                return `${n} - Buzz`
             } else if (n % 3 !== 0 && n % 5 !== 0){
                 return n
             }
@@ -17,4 +17,7 @@ const fizzBuzz = (n) => {
         }
     }   
 }
-console.log(fizzBuzz(a))
+
+for (let i = 0; i <= 100; i++){
+    console.log(fizzBuzz(i))
+}
