@@ -15,9 +15,6 @@ const fizzBuzz = (n) => {
         } else {
             return 'Digite um número menor do que 100'
         }
-    }
-    
-    
+    }   
 }
-
 console.log(fizzBuzz(a))
