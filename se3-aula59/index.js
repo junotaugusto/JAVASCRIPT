@@ -32,3 +32,17 @@ for(let numero of numeros){
 }
 console.log(contador)
 //O contador mostra que ele saiu do índice 0 e foi até o 23, não dando continuidade no laço por conta do break. Se a palavra break não estivesse ali, ele não pararia de contar até o final do laço.
+
+//USANDO WHILE
+
+const idades = [22,40,39,10,6];
+let i = 0;
+while( i < idades.length){
+    let n = idades[i] //n recebe o valor do índice
+    if(n === 40){
+        console.log(`Pulei o número ${n}`)
+        i++ // Por isso, insere-se o i++ aqui.
+        continue //Aqui é preciso atualizar a variável de controle senão ele entra em um loop infinito.
+    }
+    i++
+}
