@@ -10,7 +10,7 @@ const fizzBuzz = (n) => {
             } else if (n % 5 === 0){
                 return `${n} - Buzz`
             } else if (n % 3 !== 0 && n % 5 !== 0){
-                return n
+                return n 
             }
         } else {
             return 'Digite um número menor do que 100'
