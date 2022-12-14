@@ -32,5 +32,4 @@ function retornaHora(data){
             hour12: false //Muda para horas de 0 a 23 ao invés de 1 a 12
         })
 }
-
 console.log(retornaHora())
