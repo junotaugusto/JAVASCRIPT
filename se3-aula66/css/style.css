@@ -1,0 +1,32 @@
+:root {
+    --primary-color: rgb(4, 155, 255);
+    --primary-color-darker: rgb(2, 44, 83);
+}
+
+* {
+    box-sizing: border-box;  
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto; /*O primeiro é referente ao top e bottom, o segundo às laterais.*/
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 13px rgba(61, 61, 61, 0.374);
+}
+
+.textoRelogio {
+    font-size: 2em;
+}
+
