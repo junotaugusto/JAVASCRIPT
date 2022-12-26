@@ -15,7 +15,7 @@ const soma = function(n1,n2){
 }
 console.log(soma(13928,1939281))
 //Function expression
-const souUmDado = function(){
+const souUmDado = function(){ //usa-se função anônima aqui, mas ela funcionaria se tivesse nome também.
     console.log('Sou um dado...')
 }
 
@@ -30,4 +30,18 @@ const funcaoArrow = ()=> {
     console.log('Sou uma arrow function')
 }
 funcaoArrow()
-//Lembrando que as arrow functions não são hoisting, ou seja, somente podem ser declaradas após a inicialização das mesmas. 
+//Lembrando que as arrow functions não são hoisting, ou seja, somente podem ser declaradas após a inicialização das mesmas.
+
+//DENTRO DE UM OBJETO
+//Cria um objeto e joga uma função como um método de um objeto. Inclusive, podemos criar a função dentro do objeto sem a função anônima, como ocorre em ouvir, abaixo.
+const obj = {
+    falar: function(){ //com a função anônima
+        console.log('Estou falando...')
+    },
+    ouvir(){ //sem a função anônima.
+        console.log('Estou ouvindo...')
+    }
+}
+obj.falar() //executa a função utilizando o ponto.
+obj.ouvir()
+
