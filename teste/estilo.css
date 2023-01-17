@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  header img {
+    height: 50px;
+  }
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  header form {
+    display: flex;
+  }
+  header input[type="text"] {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  header button[type="submit"] {
+    background-color: #0095d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  /* Estilos do menu de navegação */
+  nav {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos da área de destaque */
+  #destaque {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #destaque img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+  #destaque h2 {
+    margin: 0;
+  }
+  
+  /* Estilos da seção de notícias */
+  #noticias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #noticias article {
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+  }
+  #noticias article img {
+    width: 100%;
+    height: auto;
+  }
+  #noticias article h3 {
+    margin: 0;
+  }
+  
+  /* Estilos da barra lateral */
+  aside {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  aside h4 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
