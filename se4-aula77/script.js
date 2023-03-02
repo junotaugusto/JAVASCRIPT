@@ -34,6 +34,10 @@ persLeo.falaPersonagem()
 function Pessoa(nome, sobrenome) {
         this.nome = nome,
         this.sobrenome = sobrenome;
+
+        this.metodo = function(){
+            console.log(this.nome + ': Sou um método')
+        }
     }
 
 let p1 = new Pessoa('Junot', 'Patrial Cordeiro')
@@ -41,5 +45,6 @@ let p2 = new Pessoa('Renata', 'Lemes Cordeiro')
 let p3 = new Pessoa('Dudu', 'Da Silva')
 
 console.log(`Olá, meu nome é ${p3.nome} ${p3.sobrenome}`)
+p1.metodo()
 
 //A Palavra new cria um novo objeto vazio e faz com que a palavra this aponte para o objeto que está sendo utilizado. Por isso, não precisa de return. 
